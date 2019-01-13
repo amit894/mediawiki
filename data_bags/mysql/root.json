@@ -1,0 +1,31 @@
+{
+  "id": "root",
+  "dev": {
+    "encrypted_data": "fxQJknYJqDx4mpUrseUnLPjvCTT2ZrZpKrwMbHtgQkCV1z6f84+SrfdafhQ=\n",
+    "iv": "7Cb+vsiLQKkPHhMX\n",
+    "auth_tag": "mmw3FgEU9e7kXaklm4yEsw==\n",
+    "version": 3,
+    "cipher": "aes-256-gcm"
+  },
+  "qa": {
+    "encrypted_data": "isFdTxtqCc7GSS1fR8nvNejShuonUT8oqthzQPd4UdMXOOV1JDGXSi3e\n",
+    "iv": "ugS3TyRpvSxVuOqr\n",
+    "auth_tag": "BkM+mQSekGkXUPcj+lH+zA==\n",
+    "version": 3,
+    "cipher": "aes-256-gcm"
+  },
+  "stg": {
+    "encrypted_data": "00WUx0fwzrUmo00eaOs6QrkoCulFPh1X8Rh6d1551/AELeMA5hXMBEnMXg==\n",
+    "iv": "RjOv5MzsHTAt2WuL\n",
+    "auth_tag": "JNbGn9smFSE5Gw46GJdffg==\n",
+    "version": 3,
+    "cipher": "aes-256-gcm"
+  },
+  "prod": {
+    "encrypted_data": "6LfGmEqZUOp/MYAtTN+6PygJJEpdhWB0L5n5BMOXR69zCwF4sGuTgjweCA0=\n",
+    "iv": "ab+TXoJRhIzuLxWa\n",
+    "auth_tag": "+G/+sppUySL2UWBT7Fw6Pw==\n",
+    "version": 3,
+    "cipher": "aes-256-gcm"
+  }
+}
