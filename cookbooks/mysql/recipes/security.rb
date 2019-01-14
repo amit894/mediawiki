@@ -8,8 +8,8 @@
 
 
   secret = Chef::EncryptedDataBagItem.load_secret('/etc/chef/encrypted_data_bag_secret')
-  keys = Chef::EncryptedDataBagItem.load("mysql", "root", secret)
-  password = keys["dev"]["password"]
+  keys = Chef::EncryptedDataBagItem.load("secrets", "{node['env']}", secret)
+  password = keys["root"]["password"]
 
 
 execute 'set root user password' do

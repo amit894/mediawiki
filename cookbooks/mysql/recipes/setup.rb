@@ -5,9 +5,9 @@
 # Copyright:: 2019, The Authors, All Rights Reserved.
 
 secret = Chef::EncryptedDataBagItem.load_secret('/etc/chef/encrypted_data_bag_secret')
-  keys = Chef::EncryptedDataBagItem.load("mysql", "wikiuser", secret)
-  username = keys["dev"]["username"]
-  password = keys["dev"]["password"]
+  keys = Chef::EncryptedDataBagItem.load("secrets", "#{node['env']}", secret)
+  username = keys["wikiuser"]["username"]
+  password = keys["wikiuser"]["password"]
 
 execute 'create user' do
   command <<-EOH
