@@ -5,6 +5,10 @@
   "default_attributes": {},
   "override_attributes": {},
   "chef_type": "role",
-  "run_list": [],
+  "run_list": [
+    "mysql",
+    "mysql[security]",
+    "mysql[setup]"
+  ],
   "env_run_lists": {}
 }
